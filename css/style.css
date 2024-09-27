@@ -9,16 +9,6 @@
     --box-shodow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* Light box shadow */
 }
 
-.darkmode {
-    --main-color: #e54b4b; /* Alternative accent color (orange) */
-    --light-color: #fffcf2; /* Light text color in dark mode */
-    --light-bg: #0b090a; /* Dark background color */
-    --white: #0b090a; /* White color for elements in dark mode */
-    --black: #f4f3ee; /* Light text color on dark background */
-    --border: 0.1rem solid var(--light-color); /* Light border in dark mode */
-    --box-shodow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* Light box shadow in dark mode */
-}
-
 * {
     font-family: "Roboto Condensed", sans-serif;
     margin: 0;
@@ -128,17 +118,8 @@ section {
     padding-bottom: 1rem;
 }
 
-.header .navbar.nav-2 .flex {
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
 .header .navbar.nav-1 {
     background-color: var(--black);
-}
-
-.header .navbar.nav-2 {
-    background-color: var(--white);
 }
 
 .header .navbar .flex {
@@ -200,15 +181,7 @@ section {
 .header .navbar .flex ul li:hover ul li a {
     display: block;
 }
-.dark-mode-toggle {
-    padding-top: 8px;
-    background: transparent;
-    cursor: pointer;
-    border-radius: 5px;
-    width: 20px;
-    height: 20px;
-    color: var(--black);
-}
+
 #menu-btn {
     font-size: 2.7rem;
     color: var(--black);
