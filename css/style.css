@@ -121,17 +121,8 @@ section {
     padding-bottom: 1rem;
 }
 
-.header .navbar.nav-2 .flex {
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
 .header .navbar.nav-1 {
     background-color: var(--black);
-}
-
-.header .navbar.nav-2 {
-    background-color: var(--white);
 }
 
 .header .navbar .flex {
@@ -1207,7 +1198,7 @@ section {
         top: 99%;
         left: 0;
         right: 0;
-        background-color: var(--white);
+        background-color: var(--black);
         border-top: var(--border);
         transition: 0.2s linear;
         z-index: 1;
