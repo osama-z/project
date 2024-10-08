@@ -75,30 +75,7 @@ include 'components/save_send.php';
                             <option value="40000">40k</option>
                             <option value="40000">40k</option>
                             <option value="50000">50k</option>
-                            <option value="100000">1 lac</option>
-                            <option value="500000">5 lac</option>
-                            <option value="1000000">10 lac</option>
-                            <option value="2000000">20 lac</option>
-                            <option value="3000000">30 lac</option>
-                            <option value="4000000">40 lac</option>
-                            <option value="4000000">40 lac</option>
-                            <option value="5000000">50 lac</option>
-                            <option value="6000000">60 lac</option>
-                            <option value="7000000">70 lac</option>
-                            <option value="8000000">80 lac</option>
-                            <option value="9000000">90 lac</option>
-                            <option value="10000000">1 Cr</option>
-                            <option value="20000000">2 Cr</option>
-                            <option value="30000000">3 Cr</option>
-                            <option value="40000000">4 Cr</option>
-                            <option value="50000000">5 Cr</option>
-                            <option value="60000000">6 Cr</option>
-                            <option value="70000000">7 Cr</option>
-                            <option value="80000000">8 Cr</option>
-                            <option value="90000000">9 Cr</option>
-                            <option value="100000000">10 Cr</option>
-                            <option value="150000000">15 Cr</option>
-                            <option value="200000000">20 Cr</option>
+
                         </select>
                     </div>
                     <div class="box">
@@ -112,30 +89,7 @@ include 'components/save_send.php';
                             <option value="40000">40k</option>
                             <option value="40000">40k</option>
                             <option value="50000">50k</option>
-                            <option value="100000">1 lac</option>
-                            <option value="500000">5 lac</option>
-                            <option value="1000000">10 lac</option>
-                            <option value="2000000">20 lac</option>
-                            <option value="3000000">30 lac</option>
-                            <option value="4000000">40 lac</option>
-                            <option value="4000000">40 lac</option>
-                            <option value="5000000">50 lac</option>
-                            <option value="6000000">60 lac</option>
-                            <option value="7000000">70 lac</option>
-                            <option value="8000000">80 lac</option>
-                            <option value="9000000">90 lac</option>
-                            <option value="10000000">1 Cr</option>
-                            <option value="20000000">2 Cr</option>
-                            <option value="30000000">3 Cr</option>
-                            <option value="40000000">4 Cr</option>
-                            <option value="50000000">5 Cr</option>
-                            <option value="60000000">6 Cr</option>
-                            <option value="70000000">7 Cr</option>
-                            <option value="80000000">8 Cr</option>
-                            <option value="90000000">9 Cr</option>
-                            <option value="100000000">10 Cr</option>
-                            <option value="150000000">15 Cr</option>
-                            <option value="200000000">20 Cr</option>
+
                         </select>
                     </div>
                 </div>

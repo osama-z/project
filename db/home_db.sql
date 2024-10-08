@@ -74,7 +74,7 @@ CREATE TABLE `property` (
   `image_04` varchar(50) NOT NULL,
   `image_05` varchar(50) NOT NULL,
   `description` varchar(1000) NOT NULL,
-  `date` date NOT NULL DEFAULT current_timestamp()
+  `date` DATETIME NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -88,7 +88,7 @@ CREATE TABLE `requests` (
   `property_id` varchar(20) NOT NULL,
   `sender` varchar(20) NOT NULL,
   `receiver` varchar(20) NOT NULL,
-  `date` date NOT NULL DEFAULT current_timestamp()
+  `date` DATETIME NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
