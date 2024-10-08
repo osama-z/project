@@ -4,7 +4,7 @@ try {
     $db_host = 'localhost';
     $db_name = 'home_db';
     $db_user_name = 'root';
-    $db_user_pass = '';
+    $db_user_pass = 'S123.456./s';
 
     // Create a new PDO database connection
     $conn = new PDO("mysql:host=$db_host;dbname=$db_name", $db_user_name, $db_user_pass);
