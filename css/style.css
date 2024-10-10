@@ -2,8 +2,8 @@
 :root {
     --main-color: #d9594c; /* Main accent color */
     --light-color: #040403; /* Light text color */
-    --light-bg: #f4f0e9; /* Light background color */
-    --white: #f9f9f9; /* White color for elements */
+    --light-bg: #f0efeb; /* Light background color */
+    --white: #ffffff; /* White color for elements */
     --black: #000000; /* Black color for text */
     --border: 0.1rem solid var(--light-color); /* Light border */
     --box-shodow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* Light box shadow */
@@ -26,7 +26,7 @@
 
 *::-webkit-scrollbar {
     height: 0.5rem;
-    width: 0.8rem;
+    width: 1rem;
 }
 
 *::-webkit-scrollbar-track {
@@ -69,7 +69,6 @@ section {
     text-align: center;
     font-size: 3rem;
     color: var(--black);
-    border-radius: 25px;
 }
 
 .btn,
@@ -82,7 +81,6 @@ section {
     text-align: center;
     font-size: 2rem;
     text-transform: capitalize;
-    border-radius: 15px;
 }
 
 .btn:hover,
@@ -93,7 +91,6 @@ section {
 .btn {
     display: block;
     width: 100%;
-    border-radius: 15px;
 }
 
 .inline-btn {
@@ -209,7 +206,6 @@ section {
     padding: 3rem;
     box-shadow: var(--box-shodow);
     width: 50rem;
-    border-radius: 25px;
 }
 
 .home .center form h3 {
@@ -238,13 +234,14 @@ section {
     color: var(--black);
     font-size: 1.8rem;
     margin: 1rem 0;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .home .center form .box p {
     color: var(--light-color);
     font-size: 1.7rem;
     padding-top: 1rem;
+    border-radius: 10px;
 }
 
 .home .center form .box p span {
@@ -257,6 +254,7 @@ section {
     gap: 2rem;
     justify-content: center;
     align-items: flex-start;
+    border-radius: 10px;
 }
 
 .services .box-container .box {
@@ -264,7 +262,6 @@ section {
     box-shadow: var(--box-shodow);
     padding: 2rem;
     text-align: center;
-    border-radius: 15px;
 }
 
 .services .box-container .box img {
@@ -286,12 +283,12 @@ section {
     padding-top: 0.5rem;
 }
 
-.listing .box-container {
+.listings .box-container {
     display: grid;
     row-gap: 2rem;
 }
 
-.listing .box-container form {
+.listings .box-container form {
     background-color: var(--white);
     box-shadow: var(--box-shodow);
     padding: 2rem;
@@ -301,52 +298,52 @@ section {
     align-items: center;
 }
 
-.listing .box-container form .box {
+.listings .box-container form .box {
     flex: 1 1 40rem;
     overflow-x: hidden;
 }
 
-.listing .box-container form .box .thumb {
+.listings .box-container form .box .thumb {
     height: 30rem;
     position: relative;
     margin: 1.5rem 0;
 }
 
-.listing .box-container form .box .thumb img {
+.listings .box-container form .box .thumb img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.listing .box-container form .box .save {
+.listings .box-container form .box .save {
     padding: 1rem 3rem;
     background-color: var(--light-bg);
     font-size: 1.8rem;
     cursor: pointer;
 }
 
-.listing .box-container form .box .save i {
+.listings .box-container form .box .save i {
     margin-right: 1rem;
     color: var(--black);
 }
 
-.listing .box-container form .box .save span {
+.listings .box-container form .box .save span {
     color: var(--light-color);
 }
 
-.listing .box-container form .box .save:hover {
+.listings .box-container form .box .save:hover {
     background-color: var(--main-color);
 }
 
-.listing .box-container form .box .save:hover i {
+.listings .box-container form .box .save:hover i {
     color: var(--white);
 }
 
-.listing .box-container form .box .save:hover span {
+.listings .box-container form .box .save:hover span {
     color: var(--white);
 }
 
-.listing .box-container form .box .thumb .total-images {
+.listings .box-container form .box .thumb .total-images {
     position: absolute;
     top: 1rem;
     left: 1rem;
@@ -356,17 +353,17 @@ section {
     font-size: 1.7rem;
 }
 
-.listing .box-container form .box .thumb .total-images i {
+.listings .box-container form .box .thumb .total-images i {
     margin-right: 0.8rem;
 }
 
-.listing .box-container form .box .admin {
+.listings .box-container form .box .admin {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-.listing .box-container form .box .admin h3 {
+.listings .box-container form .box .admin h3 {
     height: 4.5rem;
     line-height: 4.4rem;
     width: 4.5rem;
@@ -378,27 +375,27 @@ section {
     text-transform: uppercase;
 }
 
-.listing .box-container form .box .admin p {
+.listings .box-container form .box .admin p {
     padding-bottom: 0.3rem;
     color: var(--black);
     font-size: 1.7rem;
 }
 
-.listing .box-container form .box .admin span {
+.listings .box-container form .box .admin span {
     color: var(--light-color);
     font-size: 1.5rem;
 }
 
-.listing .box-container form .box .price {
+.listings .box-container form .box .price {
     font-size: 2rem;
     color: var(--main-color);
 }
 
-.listing .box-container form .box .price i {
+.listings .box-container form .box .price i {
     margin-right: 0.8rem;
 }
 
-.listing .box-container form .box .name {
+.listings .box-container form .box .name {
     font-size: 2rem;
     padding: 1rem 0;
     color: var(--black);
@@ -406,18 +403,18 @@ section {
     text-overflow: ellipsis;
 }
 
-.listing .box-container form .box .location {
+.listings .box-container form .box .location {
     font-size: 1.7rem;
     color: var(--light-color);
     padding-bottom: 1rem;
 }
 
-.listing .box-container form .box .location i {
+.listings .box-container form .box .location i {
     margin-right: 1rem;
     color: var(--main-color);
 }
 
-.listing .box-container form .box .flex {
+.listings .box-container form .box .flex {
     margin: 1rem 0;
     background-color: var(--light-bg);
     padding: 1.5rem;
@@ -427,17 +424,17 @@ section {
     gap: 2rem;
 }
 
-.listing .box-container form .box .flex p {
+.listings .box-container form .box .flex p {
     font-size: 1.7rem;
     flex: 1 1 20rem;
 }
 
-.listing .box-container form .box .flex p i {
+.listings .box-container form .box .flex p i {
     color: var(--main-color);
     margin-right: 0.8rem;
 }
 
-.listing .box-container form .box .flex p span {
+.listings .box-container form .box .flex p span {
     color: var(--light-color);
 }
 
@@ -632,7 +629,6 @@ section {
     padding: 2rem;
     text-align: center;
     box-shadow: var(--box-shodow);
-    border-radius: 25px;
 }
 
 .steps .box-container .box img {
@@ -665,7 +661,6 @@ section {
     background-color: var(--white);
     padding: 2rem;
     box-shadow: var(--box-shodow);
-    border-radius: 25px;
 }
 
 .reviews .box-container .box .user {
@@ -719,7 +714,6 @@ section {
     background-color: var(--white);
     box-shadow: var(--box-shodow);
     padding: 2rem;
-    border-radius: 25px;
 }
 
 .contact .row form h3 {
@@ -737,7 +731,6 @@ section {
     color: var(--black);
     font-size: 1.8rem;
     margin: 1rem 0;
-    border-radius: 15px;
 }
 
 .contact .row form textarea {
@@ -790,7 +783,6 @@ section {
     background-color: var(--white);
     box-shadow: var(--box-shodow);
     padding: 2rem;
-    border-radius: 25px;
 }
 
 .filters form #close-filter {
@@ -839,7 +831,6 @@ section {
     color: var(--black);
     border: var(--border);
     padding: 1.4rem;
-    border-radius: 15px;
 }
 
 .filters form .flex .box p {
@@ -870,7 +861,6 @@ section {
     box-shadow: var(--box-shodow);
     padding: 2rem;
     text-align: center;
-    border-radius: 25px;
 }
 
 .form-container form h3 {
@@ -887,7 +877,6 @@ section {
     margin: 1rem 0;
     width: 100%;
     font-size: 1.8rem;
-    border-radius: 15px;
 }
 
 .form-container form p {
@@ -918,7 +907,6 @@ section {
     padding: 2rem;
     text-align: center;
     overflow-x: hidden;
-    border-radius: 25px;
 }
 
 .dashboard .box-container .box h3 {
@@ -941,7 +929,6 @@ section {
     background-color: var(--white);
     padding: 2rem;
     box-shadow: var(--box-shodow);
-    border-radius: 25px;
 }
 
 .property-form form h3 {
@@ -971,7 +958,6 @@ section {
     padding: 1.4rem;
     color: var(--black);
     font-size: 1.8rem;
-    border-radius: 15px;
 }
 
 .property-form form textarea {
@@ -1019,7 +1005,7 @@ section {
     cursor: pointer;
 }
 
-.my-listing .box-container {
+.my-listings .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, 35rem);
     gap: 2rem;
@@ -1027,26 +1013,26 @@ section {
     align-items: flex-start;
 }
 
-.my-listing .box-container .box {
+.my-listings .box-container .box {
     background-color: var(--white);
     box-shadow: var(--box-shodow);
     padding: 2rem;
     overflow-x: hidden;
 }
 
-.my-listing .box-container .box .thumb {
+.my-listings .box-container .box .thumb {
     position: relative;
     height: 20rem;
     margin-bottom: 1.5rem;
 }
 
-.my-listing .box-container .box .thumb img {
+.my-listings .box-container .box .thumb img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.my-listing .box-container .box .thumb p {
+.my-listings .box-container .box .thumb p {
     position: absolute;
     top: 1rem;
     left: 1rem;
@@ -1056,20 +1042,20 @@ section {
     font-size: 1.7rem;
 }
 
-.my-listing .box-container .box .thumb p i {
+.my-listings .box-container .box .thumb p i {
     margin-right: 0.7rem;
 }
 
-.my-listing .box-container .box .price {
+.my-listings .box-container .box .price {
     font-size: 2rem;
     color: var(--main-color);
 }
 
-.my-listing .box-container .box .price i {
+.my-listings .box-container .box .price i {
     margin-right: 1rem;
 }
 
-.my-listing .box-container .box .name {
+.my-listings .box-container .box .name {
     font-size: 2rem;
     color: var(--black);
     line-height: 1.5;
@@ -1077,13 +1063,13 @@ section {
     text-overflow: ellipsis;
 }
 
-.my-listing .box-container .box .location {
+.my-listings .box-container .box .location {
     padding-bottom: 0.5rem;
     font-size: 1.7rem;
     color: var(--light-color);
 }
 
-.my-listing .box-container .box .location i {
+.my-listings .box-container .box .location i {
     margin-right: 1rem;
     color: var(--main-color);
 }
@@ -1176,11 +1162,14 @@ section {
     font-size: 2rem;
     color: var(--white);
     margin-top: 2rem;
+    /* padding-bottom: 10rem; */
 }
 
 .footer .credit span {
     color: var(--main-color);
 }
+
+/* media queries  */
 
 @media (max-width: 991px) {
     html {
@@ -1198,7 +1187,7 @@ section {
         top: 99%;
         left: 0;
         right: 0;
-        background-color: var(--black);
+        background-color: var(--white);
         border-top: var(--border);
         transition: 0.2s linear;
         z-index: 1;
@@ -1286,7 +1275,7 @@ section {
         gap: 0;
     }
 
-    .listing .box-container {
+    .listings .box-container {
         grid-template-columns: 1fr;
     }
 
@@ -1312,7 +1301,7 @@ section {
         width: 30rem;
     }
 
-    .listing .box-container form .box .thumb {
+    .listings .box-container form .box .thumb {
         height: 20rem;
     }
 }
