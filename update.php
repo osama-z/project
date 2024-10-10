@@ -20,7 +20,7 @@ if(isset($_POST['submit'])){
    $number = $_POST['number'];
    $number = filter_var($number, FILTER_SANITIZE_STRING);
    $email = $_POST['email'];
-   $email = filter_var($email, FILTER_SANITIZE_STRING);
+   $email = filter_var($email, FILTER_SANITIZE_EMAIL);
 
    if(!empty($name)){
       $update_name = $conn->prepare("UPDATE `users` SET name = ? WHERE id = ?");
@@ -83,50 +83,54 @@ if(isset($_POST['submit'])){
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>update</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update</title>
 
-   <!-- font awesome cdn link  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
-   <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
-   
-<?php include 'components/user_header.php'; ?>
 
-<section class="form-container">
+    <?php include 'components/user_header.php'; ?>
 
-   <form action="" method="post">
-      <h3>update your account!</h3>
-      <input type="tel" name="name" maxlength="50" placeholder="<?= $fetch_user['name']; ?>" class="box">
-      <input type="email" name="email" maxlength="50" placeholder="<?= $fetch_user['email']; ?>" class="box">
-      <input type="number" name="number" min="0" max="9999999999" maxlength="10" placeholder="<?= $fetch_user['number']; ?>" class="box">
-      <input type="password" name="old_pass" maxlength="20" placeholder="enter your old password" class="box">
-      <input type="password" name="new_pass" maxlength="20" placeholder="enter your new password" class="box">
-      <input type="password" name="c_pass" maxlength="20" placeholder="confirm your new password" class="box">
-      <input type="submit" value="update now" name="submit" class="btn">
-   </form>
+    <section class="form-container">
 
-</section>
+        <form action="" method="post">
+            <h3>update your account!</h3>
+            <input type="tel" name="name" maxlength="50" placeholder="<?= $fetch_user['name']; ?>" class="box">
+            <input type="email" name="email" maxlength="50" placeholder="<?= $fetch_user['email']; ?>" class="box">
+            <input type="number" name="number" min="0" max="9999999999" maxlength="10"
+                placeholder="<?= $fetch_user['number']; ?>" class="box">
+            <input type="password" name="old_pass" maxlength="20" placeholder="enter your old password" class="box">
+            <input type="password" name="new_pass" maxlength="20" placeholder="enter your new password" class="box">
+            <input type="password" name="c_pass" maxlength="20" placeholder="confirm your new password" class="box">
+            <input type="submit" value="update now" name="submit" class="btn">
+        </form>
 
-
-
+    </section>
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
 
-<?php include 'components/footer.php'; ?>
 
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
 
-<?php include 'components/message.php'; ?>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+    <?php include 'components/footer.php'; ?>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+    <?php include 'components/message.php'; ?>
 </body>
+
 </html>

@@ -31,30 +31,32 @@ if(isset($_POST['delete'])){
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>requests</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>requests</title>
 
-   <!-- font awesome cdn link  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
-   <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
-   
-<?php include 'components/user_header.php'; ?>
 
-<section class="requests">
+    <?php include 'components/user_header.php'; ?>
 
-   <h1 class="heading">all requests</h1>
+    <section class="requests">
 
-   <div class="box-container">
+        <h1 class="heading">all requests</h1>
 
-   <?php
+        <div class="box-container">
+
+            <?php
       $select_requests = $conn->prepare("SELECT * FROM `requests` WHERE receiver = ?");
       $select_requests->execute([$user_id]);
       if($select_requests->rowCount() > 0){
@@ -68,29 +70,28 @@ if(isset($_POST['delete'])){
         $select_property->execute([$fetch_request['property_id']]);
         $fetch_property = $select_property->fetch(PDO::FETCH_ASSOC);
    ?>
-   <div class="box">
-      <p>name : <span><?= $fetch_sender['name']; ?></span></p>
-      <p>number : <a href="tel:<?= $fetch_sender['number']; ?>"><?= $fetch_sender['number']; ?></a></p>
-      <p>email : <a href="mailto:<?= $fetch_sender['email']; ?>"><?= $fetch_sender['email']; ?></a></p>
-      <p>enquiry for : <span><?= $fetch_property['property_name']; ?></span></p>
-      <form action="" method="POST">
-         <input type="hidden" name="request_id" value="<?= $fetch_request['id']; ?>">
-         <input type="submit" value="delete request" class="btn" onclick="return confirm('remove this request?');" name="delete">
-         <a href="view_property.php?get_id=<?= $fetch_property['id']; ?>" class="btn">view property</a>
-      </form>
-   </div>
-   <?php
+            <div class="box">
+                <p>name : <span><?= $fetch_sender['name']; ?></span></p>
+                <p>number : <a href="tel:<?= $fetch_sender['number']; ?>"><?= $fetch_sender['number']; ?></a></p>
+                <p>email : <a href="mailto:<?= $fetch_sender['email']; ?>"><?= $fetch_sender['email']; ?></a></p>
+                <p>enquiry for : <span><?= $fetch_property['property_name']; ?></span></p>
+                <form action="" method="POST">
+                    <input type="hidden" name="request_id" value="<?= $fetch_request['id']; ?>">
+                    <input type="submit" value="delete request" class="btn"
+                        onclick="return confirm('remove this request?');" name="delete">
+                    <a href="view_property.php?get_id=<?= $fetch_property['id']; ?>" class="btn">view property</a>
+                </form>
+            </div>
+            <?php
     }
    }else{
       echo '<p class="empty">you have no requests!</p>';
    }
    ?>
 
-   </div>
+        </div>
 
-</section>
-
-
+    </section>
 
 
 
@@ -111,14 +112,17 @@ if(isset($_POST['delete'])){
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
 
-<?php include 'components/footer.php'; ?>
 
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
 
-<?php include 'components/message.php'; ?>
+    <?php include 'components/footer.php'; ?>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+    <?php include 'components/message.php'; ?>
 
 </body>
+
 </html>

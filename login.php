@@ -11,7 +11,7 @@ if(isset($_COOKIE['user_id'])){
 if(isset($_POST['submit'])){
 
    $email = $_POST['email'];
-   $email = filter_var($email, FILTER_SANITIZE_STRING); 
+   $email = filter_var($email, FILTER_SANITIZE_EMAIL); 
    $pass = sha1($_POST['pass']);
    $pass = filter_var($pass, FILTER_SANITIZE_STRING); 
 

@@ -14,9 +14,9 @@ if(isset($_POST['send'])){
    $name = $_POST['name'];
    $name = filter_var($name, FILTER_SANITIZE_STRING);
    $email = $_POST['email'];
-   $email = filter_var($email, FILTER_SANITIZE_STRING);
+   $email = filter_var($email, FILTER_SANITIZE_EMAIL);
    $number = $_POST['number'];
-   $number = filter_var($number, FILTER_SANITIZE_STRING);
+   $number = filter_var($number, FILTER_SANITIZE_NUMBER_INT);
    $message = $_POST['message'];
    $message = filter_var($message, FILTER_SANITIZE_STRING);
 
@@ -89,9 +89,9 @@ if(isset($_POST['send'])){
         <div class="box-container">
 
             <div class="box active">
-                <h3><span>how to cancel booking?</span><i class="fas fa-angle-down"></i></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus veritatis ducimus aut
-                    accusantium sunt error esse laborum cumque ipsum ab.</p>
+                <h3><span>How do I make changes to my account?</span><i class="fas fa-angle-down"></i></h3>
+                <p>go to the Account section in the navigation bar and select Update Account. From there, you can modify
+                    your personal information and save the changes</p>
             </div>
 
             <div class="box active">

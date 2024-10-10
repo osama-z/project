@@ -166,8 +166,8 @@ if(isset($_POST['update'])){
       }
    }
 
-   $update_listing = $conn->prepare("UPDATE `property` SET property_name = ?, address = ?, price = ?, type = ?, offer = ?, status = ?, furnished = ?, bhk = ?, deposite = ?, bedroom = ?, bathroom = ?, carpet = ?, age = ?, total_floors = ?, room_floor = ?, loan = ?, lift = ?, security_guard = ?, play_ground = ?, garden = ?, water_supply = ?, power_backup = ?, parking_area = ?, gym = ?, shopping_mall = ?, hospital = ?, school = ?, market_area = ?, description = ? WHERE id = ?");   
-   $update_listing->execute([$property_name, $address, $price, $type, $offer, $status, $furnished, $bhk, $deposite, $bedroom, $bathroom, $carpet, $age, $total_floors, $room_floor, $loan, $lift, $security_guard, $play_ground, $garden, $water_supply, $power_backup, $parking_area, $gym, $shopping_mall, $hospital, $school, $market_area, $description, $update_id]);
+   $update_listing = $conn->prepare("UPDATE `property` SET property_name = ?, address = ?, price = ?, type = ?, offer = ?, status = ?, furnished = ?, deposite = ?, bedroom = ?, bathroom = ?, carpet = ?, age = ?, description = ? WHERE id = ?");   
+   $update_listing->execute([$property_name, $address, $price, $type, $offer, $status, $furnished, $deposite, $bedroom, $bathroom, $carpet, $age, $description, $update_id]);
 
    $success_msg[] = 'listing updated successfully!';
 
@@ -293,7 +293,6 @@ if(isset($_POST['delete_image_05'])){
                         <option value="<?= $fetch_property['offer']; ?>" selected><?= $fetch_property['offer']; ?>
                         </option>
                         <option value="sale">sale</option>
-                        <option value="resale">resale</option>
                         <option value="rent">rent</option>
                     </select>
                 </div>
@@ -379,7 +378,7 @@ if(isset($_POST['delete_image_05'])){
                 <div class="box">
                     <p>carpet area <span>*</span></p>
                     <input type="number" name="carpet" required min="1" max="9999999999" maxlength="10"
-                        placeholder="how many squarefits?" class="input" value="<?= $fetch_property['carpet']; ?>">
+                        placeholder="how many square meter?" class="input" value="<?= $fetch_property['carpet']; ?>">
                 </div>
                 <div class="box">
                     <p>property age <span>*</span></p>

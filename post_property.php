@@ -185,7 +185,6 @@ if(isset($_POST['post'])){
                     <p>offer type <span>*</span></p>
                     <select name="offer" required class="input">
                         <option value="sale">sale</option>
-                        <option value="resale">resale</option>
                         <option value="rent">rent</option>
                     </select>
                 </div>
@@ -258,7 +257,7 @@ if(isset($_POST['post'])){
                 <div class="box">
                     <p>carpet area <span>*</span></p>
                     <input type="number" name="carpet" required min="1" max="9999999999" maxlength="10"
-                        placeholder="how many squarefits?" class="input">
+                        placeholder="how many square meter?" class="input">
                 </div>
                 <div class="box">
                     <p>property age <span>*</span></p>

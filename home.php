@@ -60,36 +60,34 @@ include 'components/save_send.php';
                         <p>Offer type <span>*</span></p>
                         <select name="h_offer" class="input" required>
                             <option value="sale">sale</option>
-                            <option value="resale">resale</option>
                             <option value="rent">rent</option>
                         </select>
                     </div>
                     <div class="box">
                         <p>minmum budget <span>*</span></p>
                         <select name="h_min" class="input" required>
-                            <option value="5000">5k</option>
-                            <option value="10000">10k</option>
-                            <option value="15000">15k</option>
-                            <option value="20000">20k</option>
-                            <option value="30000">30k</option>
-                            <option value="40000">40k</option>
-                            <option value="40000">40k</option>
-                            <option value="50000">50k</option>
+                            <option value="5000">5000</option>
+                            <option value="10000">10000</option>
+                            <option value="15000">15000</option>
+                            <option value="20000">20000</option>
+                            <option value="30000">30000</option>
+                            <option value="40000">40000</option>
+                            <option value="50000">50000</option>
 
                         </select>
                     </div>
                     <div class="box">
                         <p>maximum budget <span>*</span></p>
                         <select name="h_max" class="input" required>
-                            <option value="5000">5k</option>
-                            <option value="10000">10k</option>
-                            <option value="15000">15k</option>
-                            <option value="20000">20k</option>
-                            <option value="30000">30k</option>
-                            <option value="40000">40k</option>
-                            <option value="40000">40k</option>
-                            <option value="50000">50k</option>
-
+                            <option value="50000">50000</option>
+                            <option value="100000">100000</option>
+                            <option value="150000">150000</option>
+                            <option value="200000">200000</option>
+                            <option value="300000">300000</option>
+                            <option value="400000">400000</option>
+                            <option value="500000">500000</option>
+                            <option value="1000000">1000000</option>
+                            <option value="10000000">10000000</option>
                         </select>
                     </div>
                 </div>
@@ -238,7 +236,7 @@ include 'components/save_send.php';
                         <p><i class="fas fa-tag"></i><span><?= $fetch_property['offer']; ?></span></p>
                         <p><i class="fas fa-trowel"></i><span><?= $fetch_property['status']; ?></span></p>
                         <p><i class="fas fa-couch"></i><span><?= $fetch_property['furnished']; ?></span></p>
-                        <p><i class="fas fa-maximize"></i><span><?= $fetch_property['carpet']; ?>sqft</span></p>
+                        <p><i class="fas fa-maximize"></i><span><?= $fetch_property['carpet']; ?> sq m</span></p>
                     </div>
                     <div class="flex-btn">
                         <a href="view_property.php?get_id=<?= $fetch_property['id']; ?>" class="btn">view property</a>
