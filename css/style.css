@@ -38,7 +38,7 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 64%;
     overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-padding-top: 10rem;
@@ -49,7 +49,7 @@ body {
 }
 
 section {
-    padding: 3rem 2rem;
+    padding: 4rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -1171,7 +1171,7 @@ section {
 
 /* media queries  */
 
-@media (max-width: 991px) {
+@media (max-width: 1000px) {
     html {
         font-size: 55%;
     }
@@ -1180,6 +1180,7 @@ section {
 @media (max-width: 768px) {
     #menu-btn {
         display: inline-block;
+        color: var(--light-bg);
     }
 
     .header .navbar .menu {
@@ -1268,7 +1269,7 @@ section {
     }
 
     .header .navbar .flex .logo {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     .home .center form .flex {

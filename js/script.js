@@ -33,46 +33,4 @@ document.addEventListener("DOMContentLoaded", function () {
                 headings.parentElement.classList.toggle("active");
             });
         });
-
-    // Retrieve the user's darkMode preference from local storage
-    let darkMode = localStorage.getItem("darkMode");
-
-    // Select the dark mode toggle button
-    const darkModeToggle = document.querySelector("#dark-mode-toggle");
-
-    // Function to enable dark mode
-    const enableDarkMode = () => {
-        // 1. Add the "darkmode" class to the body
-        document.body.classList.add("darkmode");
-        // 2. Update darkMode in local storage
-        localStorage.setItem("darkMode", "enabled");
-    };
-
-    // Function to disable dark mode
-    const disableDarkMode = () => {
-        // 1. Remove the "darkmode" class from the body
-        document.body.classList.remove("darkmode");
-        // 2. Update darkMode in local storage
-        localStorage.setItem("darkMode", null);
-    };
-
-    // Check if the user already enabled darkMode
-    // If yes, start with it enabled
-    if (darkMode === "enabled") {
-        enableDarkMode();
-    }
-
-    // Toggle dark mode when the button is clicked
-    darkModeToggle.addEventListener("click", () => {
-        // Get the current darkMode setting
-        darkMode = localStorage.getItem("darkMode");
-
-        // If it's not currently enabled, enable it
-        if (darkMode !== "enabled") {
-            enableDarkMode();
-        } else {
-            // If it has been enabled, turn it off
-            disableDarkMode();
-        }
-    });
 });

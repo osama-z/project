@@ -32,8 +32,6 @@ include 'components/save_send.php';
 <body>
 
     <?php include 'components/user_header.php'; ?>
-
-
     <!-- home section starts  -->
 
     <div class="home">
@@ -260,14 +258,6 @@ include 'components/save_send.php';
     </section>
 
     <!-- listings section ends -->
-
-
-
-
-
-
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
 
     <?php include 'components/footer.php'; ?>
