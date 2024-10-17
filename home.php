@@ -27,6 +27,11 @@ include 'components/save_send.php';
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
 
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+
 </head>
 
 <body>
@@ -237,7 +242,8 @@ include 'components/save_send.php';
                         <p><i class="fas fa-maximize"></i><span><?= $fetch_property['carpet']; ?> sq m</span></p>
                     </div>
                     <div class="flex-btn">
-                        <a href="view_property.php?get_id=<?= $fetch_property['id']; ?>" class="btn">view property</a>
+                        <a href="view_property.php?get_id=<?= $fetch_property['id']; ?>" class="btn">view
+                            property</a>
                         <input type="submit" value="send enquiry" name="send" class="btn">
                     </div>
                 </div>

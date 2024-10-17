@@ -27,7 +27,7 @@ include 'components/save_send.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Property</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -80,6 +80,8 @@ include 'components/save_send.php';
                     <?php } ?>
                 </div>
                 <div class="swiper-pagination"></div>
+
+
             </div>
             <h3 class="name"><?= $fetch_property['property_name']; ?></h3>
             <p class="location"><i class="fas fa-map-marker-alt"></i><span><?= $fetch_property['address']; ?></span></p>
@@ -138,15 +140,7 @@ include 'components/save_send.php';
     <!-- view property section ends -->
 
 
-
-
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
 
@@ -158,7 +152,7 @@ include 'components/save_send.php';
     <?php include 'components/message.php'; ?>
 
     <script>
-    var swiper = new Swiper(".images-container", {
+    const swiper = new Swiper(".images-container", {
         effect: "coverflow",
         grabCursor: true,
         centeredSlides: true,
@@ -174,6 +168,8 @@ include 'components/save_send.php';
         pagination: {
             el: ".swiper-pagination",
         },
+
+
     });
     </script>
 
